@@ -3,10 +3,10 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 #Enviromental variables look at sendgrid
-username = 'mackryanlamar1@gmail.com'
-password = '#Mack1789'
+username = 'test1@gmail.com'
+password = 'test1password'
 
-def send_mail(text = 'Email Body',subject='Hello World',from_email='Mark Mburu <mackryanlamr1@gmail.com>',to_emails=None,html=None):
+def send_mail(text = 'Email Body',subject='Hello World',from_email='Test <test1@gmail.com>',to_emails=None,html=None):
     assert isinstance(to_emails,list)
     msg = MIMEMultipart('alternative')
     msg['From'] = from_email
