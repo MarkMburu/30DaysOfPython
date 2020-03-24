@@ -5,7 +5,6 @@ host = 'imap.gmail.com'
 
 username = 'test1@gmail.com'
 password = 'test1password'
-
 def get_inbox():
     mail = imaplib.IMAP4_SSL(host)
     mail.login(username,password)
